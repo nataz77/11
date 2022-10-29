@@ -23,11 +23,14 @@ Pull requests with additional tools and projects are more than welcome!
 - [ViVeTool](https://github.com/thebookisclosed/ViVe): C# library and console app for using new feature control APIs available in Windows 10 version 2004 and newer
 - [FluentFlyouts3](https://github.com/FireCubeStudios/FluentFlyouts3): Fluent Flyouts 3 WinUI 3 Edition 
 - [Shell](https://github.com/moudey/Shell): Powerful context menu manager for Windows File Explorer 
+- [ElevenClock](https://github.com/martinet101/ElevenClock): Customize Windows 11 taskbar clock 
+- [
 
-## Windows fundamentals:
+## Windows fundamentals
 - [LockHunter](https://lockhunter.com/): foolproof file unlocker
 - [SysInternals Suite](https://apps.microsoft.com/store/detail/sysinternals-suite/9P7KNL5RWT25): Sysinternals Suite is a bundle of the Sysinternals utilities including Process Explorer, Process Monitor, Sysmon, Autoruns, ProcDump, all of the PsTools, and many more.
 - [Clink](https://github.com/chrisant996/clink): Bash's powerful command line editing in cmd.exe 
+- [Terminal](https://github.com/microsoft/terminal): Windows Terminal 
 
 ## Networking
 - [PortMaster](https://github.com/safing/portmaster): free and open-source application firewall that does the heavy lifting for you.
@@ -42,4 +45,18 @@ Pull requests with additional tools and projects are more than welcome!
 - [Open Video Downloader](https://github.com/jely2002/youtube-dl-gui): cross-platform GUI for youtube-dl made in Electron and node.js
 
 ## Updates & custom images
-- [UUPMediaCreator](https://github.com/gus33000/UUPMediaCreator): https://github.com/gus33000/UUPMediaCreator
+- [UUPMediaCreator](https://github.com/gus33000/UUPMediaCreator): An utility to create Windows Media files (.ISO, .WIM, .VHD) from Unified Update Platform files 
+
+## Debloating
+There's a bunch of tools out here on GitHub to supposedly debloat Windows 10/11. <br/>
+I never had a great experience with those, most of the times they landed me with a broken installation but the side effects were not worth it. Even reverting back the changes did not restore the previous system state, so I rather use this simple poweshell to remove unwanted apps that come preinstalled:
+```poweshell
+$Apps = @(
+    #enter PackageFullNameHere
+)
+foreach ($App in $Apps) {
+        Write-Verbose -Message ('Removing app: {0}' -f $App)
+        Get-AppxPackage -Name $App | Remove-AppxPackage -ErrorAction SilentlyContinue
+}
+```
+**NB: this script is just an example and will do nothing as is, [I do NOT take responsibility for what may happen to your system! Run scripts at your own risk!](LICENSE)**
