@@ -60,3 +60,11 @@ foreach ($App in $Apps) {
 }
 ```
 **NB: this script is just an example and will do nothing as is, [I do NOT take responsibility for what may happen to your system! Run scripts at your own risk!](LICENSE)**
+
+### Performance notes
+Most of this tools have little to no CPU/memory footprint; here are a few screenshots of them running in the Task Manager:
+![image](https://user-images.githubusercontent.com/9497482/198854837-ebaa92ae-4e7a-4113-ab4b-c3400706aec8.png)
+![image](https://user-images.githubusercontent.com/9497482/198854842-4f1f2b1a-3935-4691-871b-2ec77d0664e9.png)
+![image](https://user-images.githubusercontent.com/9497482/198854883-464c38d9-ffad-4d92-b906-ae3c0956275e.png)
+![image](https://user-images.githubusercontent.com/9497482/198854892-2f676940-db0f-4435-9438-bf015e364fa8.png)
+![image](https://user-images.githubusercontent.com/9497482/198854916-3918e49a-77a0-45ca-8071-679b56a3daf8.png)
