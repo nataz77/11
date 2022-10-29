@@ -1,6 +1,6 @@
 # Awesome Windows 11
 
-A bunch of tools to make Windows 11 more style consintent and powerful.
+A bunch of tools to make Windows 11 more stylish and powerful.
 
 Pull requests with additional tools and projects are more than welcome!
 
