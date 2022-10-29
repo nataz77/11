@@ -23,8 +23,7 @@ Pull requests with additional tools and projects are more than welcome!
 - [ViVeTool](https://github.com/thebookisclosed/ViVe): C# library and console app for using new feature control APIs available in Windows 10 version 2004 and newer
 - [FluentFlyouts3](https://github.com/FireCubeStudios/FluentFlyouts3): Fluent Flyouts 3 WinUI 3 Edition 
 - [Shell](https://github.com/moudey/Shell): Powerful context menu manager for Windows File Explorer 
-- [ElevenClock](https://github.com/martinet101/ElevenClock): Customize Windows 11 taskbar clock 
-- [
+- [ElevenClock](https://github.com/martinet101/ElevenClock): Customize Windows 11 taskbar clock
 
 ## Windows fundamentals
 - [LockHunter](https://lockhunter.com/): foolproof file unlocker
