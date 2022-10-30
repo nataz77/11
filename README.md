@@ -48,7 +48,7 @@ Pull requests with additional tools and projects are more than welcome!
 
 ## Debloating
 There's a bunch of tools out here on GitHub to supposedly debloat Windows 10/11. <br/>
-I never had a great experience with those, most of the times they landed me with a broken installation but the side effects were not worth it. Even reverting back the changes did not restore the previous system state, so I rather use this simple poweshell to remove unwanted apps that come preinstalled:
+I never had a great experience with those, most of the times they landed me with a broken installation plus the side effects are not worth it in my opinion. Even reverting back the changes did not restore the previous system state, so I rather use this simple poweshell to remove unwanted apps that come preinstalled:
 ```poweshell
 $Apps = @(
     #enter PackageFullNameHere
